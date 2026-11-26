@@ -1,6 +1,6 @@
 # NLP-from-scratch
 
-**From Python to RAG in 13 hands-on notebooks.** A learning path I built to understand NLP and LLMs by writing the core pieces myself first (BPE, logistic regression, attention, LoRA, DPO) and then comparing with the real libraries and models.
+**From Python to RAG in 13 hands-on notebooks.** A study path through NLP and LLMs with worked examples: the core pieces are first built from scratch (BPE, logistic regression, attention, LoRA, DPO) and then compared with the real libraries and models.
 
 Every code line has an **Arabic comment** above it. The examples use football data where possible.
 
@@ -39,13 +39,13 @@ The Hugging Face models (bert-base-uncased, GPT-2, MiniLM, dslim/bert-base-NER) 
 
 ## Honest notes
 
-- **Small, self-written data.** Several notebooks use small datasets I wrote myself (for example 60 intent sentences), so scores such as 0.87 accuracy on 15 test sentences are only illustrative.
+- **Small, illustrative data.** Several notebooks use small example datasets (for example 60 intent sentences), so scores such as 0.87 accuracy on 15 test sentences are only illustrative.
 - **Not football data everywhere.** The text classification and Word2Vec notebooks use real labeled newsgroup sports articles (baseball vs hockey), not football.
-- **Frameworks.** My own deep learning code (notebook 5, LoRA in notebook 10) is Keras / TensorFlow. Hugging Face models run on a PyTorch backend, because current `transformers` no longer ships TensorFlow models.
+- **Frameworks.** The from-scratch deep learning code (notebook 5, LoRA in notebook 10) is Keras / TensorFlow. Hugging Face models run on a PyTorch backend, because current `transformers` no longer ships TensorFlow models.
 - **Lighter than production.** Full BERT fine-tuning and a full DPO run were replaced by lighter versions (feature extraction, a 6-step DPO demo on one pair) because of limited RAM. They show the mechanism, not a real training run.
-- **Weak spots are left in.** For example GPT-2 small is a weak generator in the RAG notebook, and NER mislabels some clubs. I kept the real outputs.
+- **Weak spots are left in.** For example GPT-2 small is a weak generator in the RAG notebook, and NER mislabels some clubs. The real outputs are kept.
 - Notebooks are saved without outputs. Run them to reproduce the results.
 
-## Author
+## Maintained by
 
 Mostafa Elesely, [GitHub](https://github.com/mostafaelesely) | [LinkedIn](https://www.linkedin.com/in/mostafa-elesely-4b86ab318/)
